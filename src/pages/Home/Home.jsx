@@ -2,7 +2,7 @@
 import { MdContactPhone } from "react-icons/md";
 import css from "./Home.module.css"
 
- function Home() {
+ const  Home = () => {
   return (
     <div className={css.home} >
    

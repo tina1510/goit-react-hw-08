@@ -3,7 +3,7 @@ import { Formik, Form, Field } from "formik";
 import css from "./RegistrationForm.module.css";
 import { register } from "../../redux/auth/operations";
 
-export default function RegistrationForm() {
+const RegistrationForm =() => {
   
   const dispatch = useDispatch();
 
@@ -38,3 +38,4 @@ export default function RegistrationForm() {
     </Formik>
   );
 }
+export default RegistrationForm;
