@@ -1,4 +1,6 @@
 .textError {
   font-size: 36px;
-  color: green;
+  color: rgb(211, 15, 61);
+  margin: 0 auto;
+  align-items: center;
 }

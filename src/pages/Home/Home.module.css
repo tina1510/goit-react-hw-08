@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  display: flex;
+  width: 450px;
+  height: 400px;
+  fill: #6b6b6b;
+  margin: 0, auto;
+}
+.text {
+  max-width: 600px;
+  font-size: 36px;
+  /* font-style: italic; */
+  /* font-weight: bold; */
+  background-color: #d7d7f2;
+  color: rgb(4, 4, 4);
+  padding: 24px;
+  border: none;
+  border-radius: 10px;
+}

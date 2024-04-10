@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   border: 2px solid #212121;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 10px 10px;
 }
@@ -17,7 +18,12 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #898989;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .contactText {
   display: flex;

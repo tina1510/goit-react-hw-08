@@ -1,0 +1,10 @@
+.authNav {
+  display: flex;
+  gap: 24px;
+}
+.authLik {
+  font-weight: 400;
+  color: #595959;
+  font-size: 24px;
+  text-decoration: none;
+}

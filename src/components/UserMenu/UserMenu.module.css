@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.username {
+  /* font-weight: 400; */
+  font-size: 18px;
+  font-style: oblique;
+  margin: 0 auto;
+  padding: 0;
+}
+.btnLogOut {
+  color: white;
+
+  border-radius: 20px;
+  background: #6f6f70;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+}

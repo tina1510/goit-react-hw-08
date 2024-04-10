@@ -1,0 +1,19 @@
+.title {
+  font-size: 48px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+.textLink {
+  font-size: 24px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.link {
+  text-decoration: none;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

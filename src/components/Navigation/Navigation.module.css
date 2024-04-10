@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  gap: 24px;
+}
+.navLink {
+  font-weight: 400;
+  color: #595959;
+  font-size: 36px;
+  text-decoration: none;
+}
