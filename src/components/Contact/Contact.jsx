@@ -43,7 +43,6 @@ const Contact = ({ contact: { name, number, id } }) => {
             </div>
             {!isUpdateName && !isUpdateNumber && (
                  <button className={css.btnDel} onClick={handleDelete}>Delete</button>
-                // <button className={css.btnDel} onClick={() => dispatch(deleteContact(id))}>Delete</button>
             )}
          <Toaster></Toaster>
         </div>
