@@ -7,12 +7,12 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import ContactList from "../../components/ContactList/ContactList";
 import { selectError, selectLoading } from "../../redux/contacts/selectors";
 import { fetchContacts } from "../../redux/contacts/operations";
-import css from "./ContactsPage.module.css"
+import css from "./Contacts.module.css"
 
 
 
 
-const ContactsPage =() => {
+const Contacts =() => {
 
   const loadind = useSelector(selectLoading);
   const error = useSelector(selectError)
@@ -38,5 +38,5 @@ const ContactsPage =() => {
     </>
   )
 }
-export default ContactsPage;
+export default Contacts;
 

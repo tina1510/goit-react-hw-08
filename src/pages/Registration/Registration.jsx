@@ -1,7 +1,7 @@
 import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
-import css from "./Register.module.css"
+import css from "./Registration.module.css"
 
-const Register= () => {
+const Registration= () => {
   return (
     <div>
        <p className={css.title}>Register your account</p>
@@ -9,4 +9,4 @@ const Register= () => {
     </div>
   );
 }
-export default Register;
+export default Registration;

@@ -13,9 +13,11 @@ import PrivateRoute from './components/PrivateRoute.jsx';
 
 
 const HomePage = lazy(() => import("./pages/Home/Home.jsx"));
-const RegisterPage = lazy(() => import("./pages/Register/Register.jsx"));
+const RegisterPage = lazy(() => import("./pages/Registration/Registration.jsx"));
 const LoginPage = lazy(() => import("./pages/Login/Login.jsx"));
-const ContactsPage =  lazy(() => import("./pages/ContactsPage/ContactsPage.jsx"));
+const ContactsPage = lazy(() => import("./pages/Contacts/Contacts.jsx"));
+
+
 
 function App() {
   const dispatch = useDispatch();
@@ -25,23 +27,23 @@ function App() {
    const isRefreshing = useSelector(selectIsRefreshing)
   return (
     <>
-       <Layout></Layout>
-   {isRefreshing ? (
-     <Loader/>
-    ) : (
-      
- <Suspense fallback={null}>
-       <Routes>
-        <Route path="/" element={<HomePage />} />
-       <Route path="/register" element={<RestrictedRoute component ={RegisterPage}  redirectTo="/contacts"/>} />
-      <Route path="/login" element={<RestrictedRoute component ={LoginPage} redirectTo="/contacts"/>} />
-     <Route path="/contacts" element={<PrivateRoute component={ContactsPage} redirectTo="/login"/>} />
-      </Routes>
-   </Suspense>   
-       )
- } 
-    </>  
- 
+      {isRefreshing ? (
+        <Loader />
+      ) : (
+        <>
+          <Layout>
+            <Suspense fallback={null}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/register" element={<RestrictedRoute component={RegisterPage} redirectTo="/contacts" />} />
+                <Route path="/login" element={<RestrictedRoute component={LoginPage} redirectTo="/contacts" />} />
+                <Route path="/contacts" element={<PrivateRoute component={ContactsPage} redirectTo="/login" />} />
+              </Routes>
+            </Suspense>
+          </Layout>
+        </>
+      )}
+    </>
   )
 }
 
